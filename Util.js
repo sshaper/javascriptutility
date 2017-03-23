@@ -2,8 +2,8 @@
 
 var Util = {}
 
-Util.getEl = function(input){
-	return document.querySelectorAll(input)
+Util.getEl = function(input) {
+    return document.querySelectorAll(input)
 }
 
 
@@ -23,14 +23,14 @@ if (window.addEventListener) {
         ele.removeEventListener(event, func, false);
     };
 
-} 
+}
 
-if (window.attachEvent){
-	Util.addLis = function(ele, event, func){
-		ele.attachEvent("on" + type, listener2);
-	};
+if (window.attachEvent) {
+    Util.addLis = function(ele, event, func) {
+        ele.attachEvent("on" + type, listener2);
+    };
 
-	Util.stProp = function(event) {
+    Util.stProp = function(event) {
         event.cancelBubble = true;
     };
 
@@ -41,7 +41,7 @@ if (window.attachEvent){
     Util.remLis = function(ele, event, func) {
         ele.detachEvent(event, func);
     };
-	
+
 }
 
 
