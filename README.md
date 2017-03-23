@@ -18,10 +18,19 @@ This method will send text and or a file to the server via AJAX.  The arguments 
 
 * callback  -  The function that will be called when the transaction is done. Example:
 
+"res" is the response object and "res.responseText" is the text that will be sent back from the server.
+
+* postData (optional) - The data that you would be sending to the server (it can be stringified JSON as well).  This is only needed if you are sending data (post request) to the server.  NOTE The backend script will get to get the variable "data".  For example in PHP it would be "$_POST['data']".
+
+* file (optional) - This is a boolean that will be set to true if you are attaching a file, otherwise omit it.
+
+Example using just url and callback Util.sendRequest(url, callback).
+
 ```javascript
 Util.sendRequest(somefile.php, function(res){
 	console.log(res.responseText)
 });
 ```
-"res" is the response object and "res.responseText" is the text that will be done via the server.
+
+
 
