@@ -11,7 +11,7 @@ This method adds an event listener to an element.  The arguments are as follows.
 * event = The event you are assigning ('click','change','mouseover', etc) (string).
 * function = The function that is to run when the event is fired (function).
 
-##Util.sendRequest(url, callback, postData, file)
+## Util.sendRequest(url, callback, postData, file)
 This method will send text and or a file to the server via AJAX.  The arguments are as follows.
 
 * url - The path to the file you are sending informaiton to or getting information from. If you are only getting information from the server and not sending any then you just need the url argument and callback.
