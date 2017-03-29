@@ -10,7 +10,9 @@ Util.getEl = function(input) {
 if (window.addEventListener) {
 
     Util.addLis = function(ele, event, func) {
-        ele.addEventListener(event, func, false);
+        if(ele){
+            ele.addEventListener(event, func, false);
+        }
     };
 
     Util.stProp = function(event) {
@@ -20,14 +22,18 @@ if (window.addEventListener) {
         event.preventDefault();
     };
     Util.remLis = function(ele, event, func) {
-        ele.removeEventListener(event, func, false);
+        if(ele){
+            ele.removeEventListener(event, func, false);
+        }
     };
 
 }
 
 if (window.attachEvent) {
     Util.addLis = function(ele, event, func) {
-        ele.attachEvent("on" + type, listener2);
+        if(ele){
+            ele.attachEvent("on" + type, listener2);
+        }
     };
 
     Util.stProp = function(event) {
@@ -39,7 +45,9 @@ if (window.attachEvent) {
     };
 
     Util.remLis = function(ele, event, func) {
-        ele.detachEvent(event, func);
+        if(ele){
+            ele.detachEvent(event, func);
+        }
     };
 
 }
