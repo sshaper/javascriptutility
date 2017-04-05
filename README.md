@@ -2,20 +2,20 @@
 This is a utility file I created that handles some of the common JavaScript functions.  There are many like it out there, this one is custom for me.
 
 ## Util.getEl(CSS selector text)
-This method takes a string that will get an element or elements based upon a CSS selector.  For example to get an element by id you would write Util.getEl('#idvalue').  To get a class you would write Util.getEl('.classValue').  It is just a shortened version of "document.querySelectorAll()".  
+This method takes a string that will get an element or elements based upon a CSS selector.  For example to get an element by id you would write Util.getEl('#idvalue').  To get a class you would write Util.getEl('.classValue').  It is just a shortened version of "document.querySelectorAll()".
 
 NOTE: This will return a node list of element even if there is just one.
 
 Example getting an id
-```
+```javascript
 Util.getEl('#elementid');
 ```
 Example getting a class
-```
+```javascript
 Util.getEl('.classname');
 ```
 Example getting an element
-```
+```javascript
 Util.getEl('elementname');
 ```
 
@@ -26,8 +26,8 @@ This method adds an event listener to an element.  The arguments are as follows.
 * event = The event you are assigning ('click','change','mouseover', etc) (string).
 * function = The function that is to run when the event is fired (function).
 
-Example 
-```
+Example
+```javascript
 Util.addLis(Util.getEl('#elementid')[0], 'click', function(){...});
 ```
 
@@ -72,8 +72,8 @@ The msgBox function displays a message box to inform the user of whatever.  It t
 
 NOTE: On the webpage(s) you want the message box to appear you must add the following div
 
-```
-&lt;div id="msgbox"&gt;&lt;/div&gt;
+```html
+`div id="msgbox"></div>`;
 ```
 
 background = background color
@@ -84,7 +84,7 @@ display = set to block of you want the button to show up (buttons are hidden by 
 
  The sub objects and all the options are shown below (the order does not matter):
 
-```
+```javascript
 {
 	heading {background: 'green', text: 'This is the heading', color: 'black'},
 	body {text: 'This is the heading'},
@@ -98,7 +98,7 @@ Below are some examples
 
 Example of a simple msgBox with no buttons
 
-```
+```javascript
 Util.msgBox({
 	heading: {text: 'This is the heading', background: 'blue'},
 	body: {text: 'This is the body text'}
@@ -107,7 +107,7 @@ Util.msgBox({
 
 Example of a simple msgBox with one button
 
-```
+```javascript
 Util.msgBox({
 	heading: {text: 'This is the heading', background: 'blue'},
 	body: {text: 'This is the body text'},
@@ -116,7 +116,7 @@ Util.msgBox({
 ```
 Example of a simple msgBox with two buttons
 
-```
+```javascript
 Util.msgBox({
 	heading: {text: 'This is the heading', background: 'blue'},
 	body: {text: 'This is the body text'},
@@ -126,7 +126,7 @@ Util.msgBox({
 ```
 You must use the accompanying CSS as well.
 
-```
+```css
 #msgbox{background: rgba(0, 0, 0, .5); position: absolute; width: 100%; height: 100%; font-family: sans-serif; display: none;}
 #msgbox .box {width: 400px; border-radius: 5px; margin: 50px auto;}
 #msgbox .box .heading {background: blue; color: white; border-radius: 5px 5px 0 0; font-size: 20px; padding: 5px;}
