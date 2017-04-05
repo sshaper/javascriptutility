@@ -2,7 +2,22 @@
 This is a utility file I created that handles some of the common JavaScript functions.  There are many like it out there, this one is custom for me.
 
 ## Util.getEl(CSS selector text)
-This method takes a string that will get an element or elements based upon a CSS selector.  For example to get an element by id you would write Util.getEl('#idvalue').  To get a class you would write Util.getEl('.classValue').  NOTE: This will return a node list of element even if there is just one.
+This method takes a string that will get an element or elements based upon a CSS selector.  For example to get an element by id you would write Util.getEl('#idvalue').  To get a class you would write Util.getEl('.classValue').  It is just a shortened version of "document.querySelectorAll()".  
+
+NOTE: This will return a node list of element even if there is just one.
+
+Example getting an id
+```
+Util.getEl('#elementid');
+```
+Example getting a class
+```
+Util.getEl('.classname');
+```
+Example getting an element
+```
+Util.getEl('elementname');
+```
 
 ## Util.addLis(element, event, function)
 This method adds an event listener to an element.  The arguments are as follows.
