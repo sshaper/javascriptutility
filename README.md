@@ -73,7 +73,7 @@ The msgBox function displays a message box to inform the user of whatever.  It t
 NOTE: On the webpage(s) you want the message box to appear you must add the following div
 
 ```html
-`div id="msgbox"></div>`;
+<div id="msgbox"></div>;
 ```
 
 background = background color
