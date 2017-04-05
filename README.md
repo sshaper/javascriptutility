@@ -139,4 +139,9 @@ You must use the accompanying CSS as well.
 ## Util.closeMsgBox()
 Closes the message box that was displayed via the code above.
 
+```javascript
+Util.closeMsgBox()
+
+```
+
 
