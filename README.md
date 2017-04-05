@@ -47,7 +47,7 @@ Util.sendRequest(somefile.php, function(res){
 }, formData, true);
 ```
 
-##Util.msgBox(obj)
+## Util.msgBox(obj)
 The msgBox function displays a message box to inform the user of whatever.  It takes and object as an argument to set the heading, body and optional buttons.  The object has four properties with optional objects as well.  Colors can be hex, rgb, or words.
 
 NOTE: On the webpage(s) you want the message box to appear you must add the following div
@@ -116,7 +116,7 @@ You must use the accompanying CSS as well.
 #msgbox .box .body #leftbtn{margin: 0 5px 0 0;}
 ```
 
-##Util.closeMsgBox()
+## Util.closeMsgBox()
 Closes the message box that was displayed via the code above.
 
 
