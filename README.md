@@ -1,5 +1,5 @@
 # JavaScript-Utility-File
-This is a utility file I created that handles some of the common JavaScript functions.  There are many like it out there, this one is custom for me.
+This is a utility file I created that handles some of the common JavaScript operations.  There are many like it out there, this one is custom for me.
 
 ## Util.getEl(CSS selector text)
 This method takes a string that will get an element or elements based upon a CSS selector.  For example to get an element by id you would write Util.getEl('#idvalue').  To get a class you would write Util.getEl('.classValue').  It is just a shortened version of "document.querySelectorAll()".
