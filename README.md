@@ -11,6 +11,11 @@ This method adds an event listener to an element.  The arguments are as follows.
 * event = The event you are assigning ('click','change','mouseover', etc) (string).
 * function = The function that is to run when the event is fired (function).
 
+Example 
+```
+Util.addLis(Util.getEl('#elementid')[0], 'click', function(){...});
+```
+
 ## Util.sendRequest(url, callback, postData, file)
 This method will send text and or a file to the server via AJAX.  The arguments are as follows.
 
