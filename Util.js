@@ -2,10 +2,10 @@
 
 var Util = {}
 
+/* TO CHECK IF SOMETHING WAS RETURNED YOU WILL CHECK FOR AN EMPTY ARRAY. IE if(Util.getEl('#someid').length != 0)*/
 Util.getEl = function(input) {
     return document.querySelectorAll(input)
 }
-
 
 if (window.addEventListener) {
 

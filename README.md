@@ -4,7 +4,11 @@ This is a utility file I created that handles some of the common JavaScript oper
 ## Util.getEl(CSS selector text)
 This method takes a string that will get an element or elements based upon a CSS selector.  For example to get an element by id you would write Util.getEl('#idvalue').  To get a class you would write Util.getEl('.classValue').  It is just a shortened version of "document.querySelectorAll()".
 
-NOTE: This will return a node list of element even if there is just one.
+NOTE: This will return a node list of element even if there is just one. To check that something was returned check for an empty array. For example: 
+
+```javascript
+if(Util.getEl('#someid').length != 0);
+```
 
 Example getting an id
 ```javascript
