@@ -80,10 +80,10 @@ NOTE: On the webpage(s) you want the message box to appear you must add the foll
 <div id="msgbox"></div>;
 ```
 
-*background = background color
-*color = font color
-*text = text to be displayed
-*display = set to block of you want the button to show up (buttons are hidden by default)
+* background = background color
+* color = font color
+* text = text to be displayed
+* display = set to block of you want the button to show up (buttons are hidden by default)
 
 
  The sub objects and all the options are shown below (the order does not matter):
