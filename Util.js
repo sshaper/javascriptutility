@@ -201,3 +201,29 @@ Util.msgBoxStyle = function(obj){
 Util.closeMsgBox = function(){
     this.getEl('#msgbox')[0].style.display = 'none';
 }
+
+Util.formValidation = function(formId, obj){
+    var i = 0, j = 0, label;
+
+    label = Util.getEl('#' + formId)[0].Util.getEl('label');
+    i = 0;
+    while(i < ele.length){
+        if(ele[i].lastChild.nodeName.toLowerCase() === "span"){
+            ele[i].removeChild(ele[i].lastChild);
+        }
+        i++;
+    }
+    i = 0;
+    while(i < label.length){
+        j = 0;
+        while(j < obj.length){
+            if(label[i].getAttribute('for') === obj[i].for && obj[i].status === 'error'){
+                label[i].innerHTML += '<span> ' +  obj[i].msg + '</span>';
+                break;
+            }
+            j++;
+        }
+        i++;  
+    }
+}
+
