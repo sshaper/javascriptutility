@@ -74,7 +74,7 @@ Util.sendRequest(somefile.php, function(res){
 ## Util.msgBox(obj)
 The msgBox function displays a message box to inform the user of whatever.  It takes and object as an argument to set the heading, body and optional buttons.  The object has four properties with optional objects as well.  Colors can be hex, rgb, or words.
 
-NOTE: On the webpage(s) you want the message box to appear you must add the following div
+NOTE: On the webpage(s) you want the message box to appear you must add the following div.  Normally, this is added to the body.
 
 ```html
 <div id="msgbox"></div>;
@@ -98,7 +98,7 @@ Util.msgBox({
 
 ```
 
-Below are some examples
+Below are some examples of displaying the message box.
 
 Example of a simple msgBox with no buttons
 
@@ -138,6 +138,15 @@ You must use the accompanying CSS as well.
 #msgbox .box .body .btns {margin: 10px 0 0 0; overflow: auto; position: absolute; right: 5px; bottom: 5px;}
 #msgbox .box .body .btns input{float: right; padding: 6px 12px; font-size: 14px; font-weight: 400; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 4px; background: #286090; color: #FFF; outline: none;}
 #msgbox .box .body #leftbtn{margin: 0 5px 0 0;}
+```
+
+##Assign listeners to the buttons
+To assign listeners to the buttons use the button name,  Example
+
+```javascript
+Util.addLis(Util.getEl('#leftbtn')[0], 'click', function(){...});
+
+Util.addLis(Util.getEl('#rightbtn')[0], 'click', function(){...});
 ```
 
 ## Util.closeMsgBox()
