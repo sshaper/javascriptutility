@@ -131,12 +131,12 @@ Util.msgBox({
 You must use the accompanying CSS as well.
 
 ```css
-#msgbox{background: rgba(0, 0, 0, .5); position: absolute; width: 100%; height: 100%; font-family: sans-serif; display: none;}
+#msgbox{background: rgba(0, 0, 0, .5); position: absolute; width: 100%; height: 100%; font-family: sans-serif; display: none;z-index: 1000;}
 #msgbox .box {width: 400px; border-radius: 5px; margin: 50px auto;}
 #msgbox .box .heading {background: blue; color: white; border-radius: 5px 5px 0 0; font-size: 20px; padding: 5px;}
 #msgbox .box .body {background: #FFF; position: relative; border-radius: 0 0 5px 5px; min-height: 100px; font-size: 16px; padding: 15px 8px 50px 8px;}
 #msgbox .box .body .btns {margin: 10px 0 0 0; overflow: auto; position: absolute; right: 5px; bottom: 5px;}
-#msgbox .box .body .btns input{float: right; padding: 6px 12px; font-size: 14px; font-weight: 400; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 4px; background: #286090; color: #FFF; outline: none;}
+#msgbox .box .body .btns input{float: right; padding: 6px 12px; font-size: 14px; font-weight: 400; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 4px; background: #286090; color: #FFF; outline: none; display: none;}
 #msgbox .box .body #leftbtn{margin: 0 5px 0 0;}
 ```
 
